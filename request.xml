@@ -1,0 +1,11 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Header>
+		<usr xmlns="http://msp.gob.ec/infociudadano">usr_prosalud_frontera_sur</usr>
+		<pass xmlns="http://msp.gob.ec/infociudadano">gQpRJX6s.</pass>
+	</S:Header>
+	<S:Body>
+		<BusquedaPorNuiRequest xmlns="http://msp.gob.ec/infociudadano">
+			<NUI>1104336860</NUI>
+		</BusquedaPorNuiRequest>
+	</S:Body>
+</S:Envelope>

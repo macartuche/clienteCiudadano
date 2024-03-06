@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:inf="http://msp.gob.ec/infociudadano">
+   <soapenv:Header>
+ 	<usr>usr_prosalud_frontera_sur</usr>
+ 	<pass>ldpRRR4821*-ue-1458-2023-12</pass>    
+   </soapenv:Header>
+   <soapenv:Body>
+      <inf:BusquedaPorNuiRequest>
+         <!--Optional:-->
+         <inf:NUI>1707700140</inf:NUI>
+      </inf:BusquedaPorNuiRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

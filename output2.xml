@@ -1,0 +1,30 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:BusquedaPorNuiResponse xmlns:ns2="http://msp.gob.ec/infociudadano" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<ns2:return>
+<ns2:CodigoMensaje>000</ns2:CodigoMensaje>
+<ns2:Mensaje>RESPUESTA EXITOSA</ns2:Mensaje>
+<ns2:Ciudadano>
+<ns2:Calle>MIDEROS **DESCONOCE DIRECCION</ns2:Calle>
+<ns2:CondicionCedulado>CIUDADANO</ns2:CondicionCedulado>
+<ns2:Conyuge>BALSECA CARRION ROCIO DEL PILAR</ns2:Conyuge>
+<ns2:Domicilio>PICHINCHA/QUITO/CHAUPICRUZ</ns2:Domicilio>
+<ns2:EstadoCivil>CASADO</ns2:EstadoCivil>
+<ns2:FechaCedulacion>03/10/2019</ns2:FechaCedulacion>
+<ns2:FechaFallecimiento/>
+<ns2:FechaInscripcionDefuncion/>
+<ns2:FechaInscripcionGenero/>
+<ns2:FechaNacimiento>19/11/1969</ns2:FechaNacimiento>
+<ns2:Genero/>
+<ns2:Instruccion>SUPERIOR</ns2:Instruccion>
+<ns2:LugarInscripcionGenero/>
+<ns2:LugarNacimiento>PICHINCHA/QUITO/GONZALEZ SUAREZ</ns2:LugarNacimiento>
+<ns2:NUI>1707700140</ns2:NUI>
+<ns2:Nacionalidad>ECUATORIANA</ns2:Nacionalidad>
+<ns2:Nombre>PAUCAR GUANOLUISA MARCO VINICIO</ns2:Nombre>
+<ns2:NombreMadre>GUANOLUISA GUANOLUISA MARIA HERMELINDA</ns2:NombreMadre>
+<ns2:NombrePadre>PAUCAR LLIVE JOSE SEGUNDO</ns2:NombrePadre>
+<ns2:NumeroCasa>SN</ns2:NumeroCasa>
+<ns2:Profesion>INGENIERO           </ns2:Profesion>
+<ns2:Sexo>HOMBRE</ns2:Sexo>
+</ns2:Ciudadano>
+</ns2:return>
+</ns2:BusquedaPorNuiResponse></soap:Body></soap:Envelope>
