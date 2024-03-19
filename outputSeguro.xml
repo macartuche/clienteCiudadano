@@ -1,0 +1,37 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:BusquedaSeguroPorNuiResponse xmlns:ns2="http://msp.gob.ec/consultaseguros" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<ns2:return>
+<ns2:CodigoMensaje>000</ns2:CodigoMensaje>
+<ns2:Mensaje>RESPUESTA EXITOSA</ns2:Mensaje>
+<ns2:CoberturaSeguros>
+<ns2:aseguradora>
+<ns2:NombreInstitucion>IESS</ns2:NombreInstitucion>
+<ns2:EstadoOperacion>1</ns2:EstadoOperacion>
+<ns2:CoberturaSalud>1</ns2:CoberturaSalud>
+<ns2:MensajeServicioExterno>Cédula Encontrada en Archivo HL</ns2:MensajeServicioExterno>
+<ns2:Nombre>CARTUCHE FLORES MANUEL ALBERTO</ns2:Nombre>
+<ns2:TipoSeguro>Afiliado Seguro General Tiempo Completo</ns2:TipoSeguro>
+<ns2:EstadoCobertura>Si registra cobertura</ns2:EstadoCobertura>
+<ns2:NUI>1104336860</ns2:NUI>
+</ns2:aseguradora>
+<ns2:aseguradora>
+<ns2:NombreInstitucion>ISSFA</ns2:NombreInstitucion>
+<ns2:EstadoOperacion>1</ns2:EstadoOperacion>
+<ns2:CoberturaSalud>0</ns2:CoberturaSalud>
+<ns2:MensajeServicioExterno>CEDULA O PASAPORTE NO REGISTRADO</ns2:MensajeServicioExterno>
+<ns2:Nombre/>
+<ns2:TipoSeguro>No registra cobertura</ns2:TipoSeguro>
+<ns2:EstadoCobertura>No registra cobertura</ns2:EstadoCobertura>
+<ns2:NUI>1104336860</ns2:NUI>
+</ns2:aseguradora>
+<ns2:aseguradora>
+<ns2:NombreInstitucion>ISSPOL</ns2:NombreInstitucion>
+<ns2:EstadoOperacion>1</ns2:EstadoOperacion>
+<ns2:CoberturaSalud>0</ns2:CoberturaSalud>
+<ns2:MensajeServicioExterno>NO</ns2:MensajeServicioExterno>
+<ns2:TipoSeguro>No registra cobertura. Ciudadano no encontrado</ns2:TipoSeguro>
+<ns2:EstadoCobertura>No registra cobertura</ns2:EstadoCobertura>
+<ns2:NUI>1104336860</ns2:NUI>
+</ns2:aseguradora>
+</ns2:CoberturaSeguros>
+</ns2:return>
+</ns2:BusquedaSeguroPorNuiResponse></soap:Body></soap:Envelope>

@@ -41,7 +41,25 @@
                                 <packageName>ec.gob.msp.infociudadano</packageName>
                         </configuration>
                         <phase>generate-sources</phase>
-                    </execution>
+			</execution>
+			<execution>
+                       	 	<id>wsdlservicios</id>
+                        	<goals> 
+                          		<goal>wsimport</goal> 
+                        	</goals>
+                        	<configuration>
+                            		<vmArgs>
+                                		<vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+			    		</vmArgs>
+			   		<wsdlUrls>
+                                    		<wsdlUrl>https://bse.msp.gob.ec/cxf/MSP/SWConsultar_Seguros_XID?wsdl</wsdlUrl>
+                    			</wsdlUrls>
+                    			<wsdlDirectory>${project.basedir}/src/main/resources/</wsdlDirectory>
+                    			<sourceDestDir>${project.build.directory}/generated-sources/</sourceDestDir>
+                                	<packageName>ec.gob.msp.infoseguro</packageName>
+                        	</configuration>
+                        	<phase>generate-sources</phase>
+                    	</execution> 
                 </executions>
                 <dependencies>
                     <dependency>

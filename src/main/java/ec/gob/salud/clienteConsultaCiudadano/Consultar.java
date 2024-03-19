@@ -5,6 +5,9 @@ import ec.gob.msp.infociudadano.BusquedaPorNombreResponse;
 import ec.gob.msp.infociudadano.BusquedaPorNuiRequest;
 import ec.gob.msp.infociudadano.BusquedaPorNuiResponse;
 import ec.gob.msp.infociudadano.Ciudadano;
+import ec.gob.msp.infoseguro.BusquedaSeguroPorNuiRequest;
+import ec.gob.msp.infoseguro.BusquedaSeguroPorNuiResponse;
+import ec.gob.msp.infoseguro.Coberturasalud;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,7 +28,18 @@ public class Consultar {
             System.out.println(""+respuestaNui.getReturn().getCiudadano().getNombres());
             
             
-            System.out.println("==============BusquedaPorNombre================");
+            BusquedaSeguroPorNuiRequest seguroNui = new BusquedaSeguroPorNuiRequest();
+            seguroNui.setNUI("1104336860");
+            seguroNui.setFechaCobertura("19/01/2019");
+
+	    BusquedaSeguroPorNuiResponse respuestaSeguro = ProveedorSeguro.getProveedor().busquedaPorNiu(seguroNui);
+            for(Coberturasalud cobertura: respuestaSeguro.getReturn().getCoberturaSeguros().getAseguradora()){
+                System.out.println("=>"+cobertura.getCoberturaSalud());
+                System.out.println("=>"+cobertura.getEstadoCobertura());
+                System.out.println("=>"+cobertura.getEstadoOperacion());
+            }
+            //System.out.println("==============BusquedaPorNombre================");
+            /*
             BusquedaPorNombreRequest nombrereq = new BusquedaPorNombreRequest();
             nombrereq.setApellido1("CARTUCHE");
             nombrereq.setApellido2("FLORES");
@@ -40,7 +54,7 @@ public class Consultar {
             for (Ciudadano ciudadano : ciudadanos) {
                 System.out.println("nombres: "+ciudadano.getNombres());   
                 System.out.println("nui: "+ciudadano.getNUI());   
-            }
+            }*/
             
         } catch (Exception ex) {
             Logger.getLogger(Consultar.class.getName()).log(Level.SEVERE, null, ex);
@@ -50,3 +64,7 @@ public class Consultar {
     }
 
 }
+
+
+
+
